@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html {
+  background-color: #1d1b1b; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  padding: 25px 10px 25px 10px;
+  background-color: #070808;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  header img {
+    height: 30px;
+    width: 30px;
+    margin-right: 2px;
+    margin-left: 5px; }
+  header h1 {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
+    padding-left: 10px; }
+  header nav ul {
+    list-style: none;
+    margin-left: 75px; }
+    header nav ul li {
+      display: inline-block;
+      margin-left: 15px;
+      margin-right: 15px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white; }
+
+footer {
+  background-color: #070808;
+  color: white;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  footer div a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px; }
+  footer h2 {
+    margin: 30px; }
+    footer h2 img {
+      height: 20px;
+      width: 20px;
+      margin-right: 5px; }
+
+.hero {
+  height: 500px;
+  background-color: grey;
+  background-image: url("../img/hero-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .hero h2 {
+    border: 4px white solid;
+    font-size: 70px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 50px;
+    background-color: #1d1b1b; }
+    .hero h2 img {
+      height: 55px;
+      width: 55px;
+      margin-right: 10px; }
+  .hero p {
+    border: 4px white solid;
+    font-size: 40px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 50px;
+    background-color: #292626; }
+
+.parrafo-informacion {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center; }
+  .parrafo-informacion p {
+    margin-bottom: 5px;
+    width: 600px;
+    background-color: white;
+    border: 4px white solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 25px;
+    background-color: #1d1b1b; }
+  .parrafo-informacion img {
+    height: 350px;
+    width: 600px; }
+
+.productos-destacados {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center; }
+  .productos-destacados img {
+    height: 150px;
+    width: 200px; }
+  .productos-destacados p {
+    color: white; }
+  .productos-destacados h2 {
+    margin-bottom: 15px; }
+
+.productos-destacados-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .productos-destacados-lista button {
+    margin-top: 10px;
+    margin-top: 10px;
+    width: 100px; }
+  .productos-destacados-lista div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 4px white solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin: 25px;
+    background-color: #1d1b1b; }
+    .productos-destacados-lista div img {
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    .productos-destacados-lista div p {
+      width: 300px;
+      text-align: center; }
