@@ -1,12 +1,23 @@
+main {
+    h2 {
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+    }
+}
 .productos {
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    justify-content: center;
     column-gap: 3px;
     row-gap: 3px;
     margin: 20px;
-
+    button {
+        width: 100px;
+        padding: 2px;
+        margin-top: 8px;
+    }
     div {
         display: flex;
         flex-direction: column;
@@ -14,12 +25,7 @@
         align-items: center;
         background-color: $item_background;
         border: 2px $border_color solid;
-        padding: 8px;
-        button {
-            width: 100px;
-            padding: 2px;
-            margin-top: 8px;
-        }
+        padding: 8px; 
         img {
             height: 250px;
             width: 250px;
