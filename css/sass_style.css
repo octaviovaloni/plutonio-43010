@@ -59,6 +59,10 @@ footer {
       width: 20px;
       margin-right: 5px; }
 
+.titulo {
+  margin: 20px;
+  color: white; }
+
 .hero {
   height: 500px;
   background-color: grey;
@@ -194,3 +198,94 @@ main h2 {
       text-align: center; }
     .productos div p {
       text-align: center; }
+
+.servicios {
+  display: grid;
+  grid-template-areas: 'img1 parrafo img2' 'form form form';
+  gap: 15px;
+  background-color: #080808;
+  border: 2px #7e7e7e solid;
+  color: white;
+  margin: 0 40px 0 40px;
+  padding: 20px; }
+  .servicios .servicios__img1 {
+    grid-area: img1;
+    width: 600px;
+    height: 500px; }
+  .servicios .servicios__parrafo {
+    grid-area: parrafo;
+    border: 2px #7e7e7e solid; }
+  .servicios .servicios__img2 {
+    grid-area: img2;
+    width: 700px;
+    height: 500px;
+    border: 2px #7e7e7e solid; }
+  .servicios .servicios__formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: form;
+    height: 300px;
+    border: 2px #7e7e7e solid; }
+    .servicios .servicios__formulario form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .servicios .servicios__formulario textarea {
+      resize: none;
+      width: 350px;
+      height: 100px;
+      margin-bottom: 10px; }
+    .servicios .servicios__formulario input {
+      margin-bottom: 10px;
+      width: 350px; }
+    .servicios .servicios__formulario button {
+      padding: 3px;
+      width: 150px; }
+
+.contactos-formulario {
+  background-color: #080808;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 30px;
+  border: 2px #7e7e7e solid;
+  color: white; }
+  .contactos-formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contactos-formulario textarea {
+    resize: none;
+    width: 350px;
+    height: 100px;
+    margin-bottom: 10px; }
+  .contactos-formulario input {
+    margin-bottom: 10px;
+    width: 350px; }
+  .contactos-formulario button {
+    padding: 3px;
+    width: 150px; }
+
+.contactos-informacion {
+  background-color: #080808;
+  height: 150px;
+  border: 2px #7e7e7e solid;
+  color: white;
+  color: white;
+  text-align: center;
+  margin: 30px; }
+
+.contactos-redes {
+  background-color: #080808;
+  height: 150px;
+  border: 2px #7e7e7e solid;
+  color: white;
+  color: white;
+  text-align: center;
+  margin: 30px; }

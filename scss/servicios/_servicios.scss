@@ -1,0 +1,56 @@
+.servicios {
+    display: grid;
+    grid-template-areas:
+        'img1 parrafo img2'
+        'form form form';
+    gap: 15px;
+    background-color: $item_background;
+    border: 2px $border_color solid;
+    color: white;
+    margin: 0 40px 0 40px;
+    padding: 20px;
+    .servicios__img1 {
+        grid-area: img1;
+        width: 600px;
+        height: 500px;
+    }
+    .servicios__parrafo {
+        grid-area: parrafo;
+        border: 2px $border_color solid;
+    }
+    .servicios__img2 {
+        grid-area: img2;
+        width: 700px;
+        height: 500px;
+        border: 2px $border_color solid;
+    }
+    .servicios__formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-area: form;
+        height: 300px;
+        border: 2px $border_color solid;
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        textarea {
+            resize: none;
+            width: 350px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+            width: 350px;
+        }
+        button {
+            padding: 3px;
+            width: 150px;
+        }
+    }
+}

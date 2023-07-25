@@ -1,0 +1,50 @@
+.contactos-formulario {
+    background-color: $item_background;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 30px;
+    border: 2px $border_color solid;
+    color: white;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea {
+        resize: none;
+        width: 350px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    input {
+        margin-bottom: 10px;
+        width: 350px;
+    }
+    button {
+        padding: 3px;
+        width: 150px;
+    }
+}
+
+.contactos-informacion {
+    background-color: $item_background;
+    height: 150px;
+    border: 2px $border_color solid;
+    color: white;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+.contactos-redes {
+    background-color: $item_background;
+    height: 150px;
+    border: 2px $border_color solid;
+    color: white;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}

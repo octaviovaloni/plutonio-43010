@@ -1,11 +1,17 @@
 @import "./utils/variables";
 @import "./utils/startup";
+
 @import "./base/body";
 @import "./base/header";
 @import "./base/footer";
+@import "./base/titulo";
 
 @import "./index/hero";
 @import "./index/parrafo_info";
 @import "./index/productos_destacados";
 
 @import "./productos/productos";
+
+@import "./servicios/servicios";
+
+@import "./contactos/contactos";
