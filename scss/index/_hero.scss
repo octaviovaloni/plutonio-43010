@@ -1,5 +1,5 @@
 .hero {
-    height: 500px;
+    height: 50vh;
     background-color: grey;
     background-image: url("../img/hero-background.jpg");
     background-position: center;
@@ -20,6 +20,9 @@
         padding-right: 30px;
         margin: 50px;
         background-color: $item_background;
+        height: auto;
+        width: auto;
+        overflow-wrap: break-word;
         img {
             height: 55px;
             width: 55px;
@@ -33,6 +36,35 @@
         padding-left: 30px;
         padding-right: 30px;
         margin: 50px;
+        height: auto;
+        width: auto;
         background-color: $item_background;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 50px;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero {
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 40px;
+        }
     }
 }
