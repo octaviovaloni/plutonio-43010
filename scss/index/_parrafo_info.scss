@@ -31,33 +31,3 @@
     }
 
 }
-
-@media screen and (max-width: 1024px) {
-    .parrafo-informacion {
-        font-size: 15px;
-        div {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-        }
-    }
-}
-@media screen and (max-width: 480px) {
-    .parrafo-informacion {
-        font-size: 15px;
-        img {
-            border: 2px $border_color solid;
-            width: 350px;
-            height: 200px;
-        }
-    }
-}
-@media screen and (max-width: 320px) {
-    .parrafo-informacion {
-        font-size: 15px;
-        img {
-            border: 2px $border_color solid;
-            width: 275px;
-            height: 150px;
-        }
-    }
-}

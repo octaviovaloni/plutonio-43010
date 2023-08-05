@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+:root {
+  --bs-body-bg: $background_color; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -40,16 +43,6 @@ header {
         text-decoration: none;
         color: white; }
 
-@media screen and (max-width: 880px) {
-  header {
-    flex-direction: column; } }
-
-@media screen and (max-width: 600px) {
-  header {
-    flex-direction: column; }
-    header nav ul {
-      margin: auto; } }
-
 footer {
   background-color: #070808;
   color: white;
@@ -58,10 +51,16 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
-  footer div a img {
-    width: 50px;
-    height: 50px;
-    margin: 10px; }
+  footer p {
+    text-align: center; }
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+    footer div a img {
+      width: 40px;
+      height: 40px;
+      margin: 1px; }
   footer h2 {
     margin: 30px; }
     footer h2 img {
@@ -113,22 +112,6 @@ footer {
     width: auto;
     background-color: #080808; }
 
-@media screen and (max-width: 600px) {
-  .hero {
-    height: 80vh; } }
-
-@media screen and (max-width: 480px) {
-  .hero h2 {
-    font-size: 50px; }
-  .hero p {
-    font-size: 50px; } }
-
-@media screen and (max-width: 320px) {
-  .hero h2 {
-    font-size: 40px; }
-  .hero p {
-    font-size: 40px; } }
-
 .parrafo-informacion {
   color: white;
   display: flex;
@@ -157,29 +140,6 @@ footer {
     border: 2px #7e7e7e solid;
     width: 450px;
     height: 300px; }
-
-@media screen and (max-width: 1024px) {
-  .parrafo-informacion {
-    font-size: 15px; }
-    .parrafo-informacion div {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr; } }
-
-@media screen and (max-width: 480px) {
-  .parrafo-informacion {
-    font-size: 15px; }
-    .parrafo-informacion img {
-      border: 2px #7e7e7e solid;
-      width: 350px;
-      height: 200px; } }
-
-@media screen and (max-width: 320px) {
-  .parrafo-informacion {
-    font-size: 15px; }
-    .parrafo-informacion img {
-      border: 2px #7e7e7e solid;
-      width: 275px;
-      height: 150px; } }
 
 .productos-destacados {
   color: white;
@@ -228,10 +188,6 @@ footer {
     .productos-destacados-lista div p {
       text-align: center; }
 
-@media screen and (max-width: 480px) {
-  .productos-destacados-lista {
-    grid-template-columns: 1fr; } }
-
 main h2 {
   margin-top: 20px;
   color: white;
@@ -264,22 +220,6 @@ main h2 {
       text-align: center; }
     .productos div p {
       text-align: center; }
-
-@media screen and (max-width: 1300px) {
-  .productos {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
-
-@media screen and (max-width: 1000px) {
-  .productos {
-    grid-template-columns: 1fr 1fr 1fr; } }
-
-@media screen and (max-width: 770px) {
-  .productos {
-    grid-template-columns: 1fr 1fr; } }
-
-@media screen and (max-width: 533px) {
-  .productos {
-    grid-template-columns: 1fr; } }
 
 .servicios {
   display: grid;
@@ -393,3 +333,117 @@ main h2 {
     display: inline-block;
     width: 400px;
     height: 400px; }
+
+@media screen and (max-width: 905px) {
+  h2 {
+    font-size: 20px; }
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 710px) {
+  header {
+    flex-direction: column; }
+    header nav ul {
+      margin: auto; } }
+
+@media screen and (max-width: 770px) {
+  footer p {
+    width: 150px; }
+  footer div {
+    grid-template-columns: 1fr 1fr; }
+    footer div a img {
+      margin: 5px;
+      width: 35px;
+      height: 35px; } }
+
+@media screen and (max-width: 450px) {
+  footer h2 {
+    font-size: 20px; }
+    footer h2 img {
+      height: 17px;
+      width: 17px; }
+  footer p {
+    width: 100px; }
+  footer div {
+    grid-template-columns: 1fr; }
+    footer div a img {
+      margin: 5px;
+      width: 30px;
+      height: 30px; } }
+
+@media screen and (max-width: 410px) {
+  footer h2 {
+    font-size: 20px; }
+    footer h2 img {
+      height: 17px;
+      width: 17px; }
+  footer p {
+    font-size: 10px; } }
+
+@media screen and (max-width: 335px) {
+  footer h2 {
+    font-size: 13px; }
+    footer h2 img {
+      height: 15px;
+      width: 15px; } }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 80vh; } }
+
+@media screen and (max-width: 480px) {
+  .hero h2 {
+    font-size: 50px; }
+  .hero p {
+    font-size: 50px; } }
+
+@media screen and (max-width: 320px) {
+  .hero h2 {
+    font-size: 40px; }
+  .hero p {
+    font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  .productos-destacados-lista {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 1024px) {
+  .parrafo-informacion {
+    font-size: 15px; }
+    .parrafo-informacion div {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; } }
+
+@media screen and (max-width: 480px) {
+  .parrafo-informacion {
+    font-size: 15px; }
+    .parrafo-informacion img {
+      border: 2px #7e7e7e solid;
+      width: 350px;
+      height: 200px; } }
+
+@media screen and (max-width: 320px) {
+  .parrafo-informacion img {
+    border: 2px #7e7e7e solid;
+    width: 275px;
+    height: 150px; } }
+
+@media screen and (max-width: 1300px) {
+  .productos {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 1000px) {
+  .productos {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 770px) {
+  .productos {
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 533px) {
+  .productos {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 533px) {
+  .productos {
+    grid-template-columns: 1fr; } }

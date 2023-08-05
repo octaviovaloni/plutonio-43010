@@ -41,30 +41,3 @@
         background-color: $item_background;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .hero {
-        height: 80vh;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .hero {
-        h2 {
-            font-size: 50px;
-        }
-        p {
-            font-size: 50px;
-        }
-    }
-}
-@media screen and (max-width: 320px) {
-    .hero {
-        h2 {
-            font-size: 40px;
-        }
-        p {
-            font-size: 40px;
-        }
-    }
-}
