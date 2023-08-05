@@ -1,8 +1,5 @@
 // HEADER
 @media screen and (max-width: 905px) {
-    h2 {
-        font-size: 20px;
-    }
     header {
         flex-direction: column;
     }
@@ -10,11 +7,18 @@
 @media screen and (max-width: 710px) {
     header {
         flex-direction: column;
-        nav{
+    }
+}
+@media screen and (max-width: 555px) {
+    header {
+        nav {
             ul {
-                margin: auto;
+                flex-direction: column;
+                li {
+                    margin: 3px 0px 3px 0px;
+                }
             }
-        };
+        }
     }
 }
 
@@ -167,12 +171,7 @@
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width: 533px) {
-    .productos {
-        grid-template-columns: 1fr;
-    }
-}
-@media screen and (max-width: 533px) {
+@media screen and (max-width: 576px) {
     .productos {
         grid-template-columns: 1fr;
     }

@@ -21,24 +21,25 @@ header {
   background-color: #070808;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  color: white; }
+  header h1 {
+    font-size: 30px;
+    margin-right: 10px;
+    padding-left: 10px; }
   header img {
     height: 30px;
     width: 30px;
     margin-right: 2px;
     margin-left: 5px; }
-  header h1 {
-    color: white;
-    font-size: 30px;
-    margin-right: 10px;
-    padding-left: 10px; }
   header nav ul {
-    list-style: none;
-    margin-left: 75px; }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none; }
     header nav ul li {
       display: inline-block;
-      margin-left: 15px;
-      margin-right: 15px; }
+      margin: 0px 10px 0px 10px; }
       header nav ul li a {
         text-decoration: none;
         color: white; }
@@ -335,16 +336,18 @@ main h2 {
     height: 400px; }
 
 @media screen and (max-width: 905px) {
-  h2 {
-    font-size: 20px; }
   header {
     flex-direction: column; } }
 
 @media screen and (max-width: 710px) {
   header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 555px) {
+  header nav ul {
     flex-direction: column; }
-    header nav ul {
-      margin: auto; } }
+    header nav ul li {
+      margin: 3px 0px 3px 0px; } }
 
 @media screen and (max-width: 770px) {
   footer p {
@@ -440,10 +443,6 @@ main h2 {
   .productos {
     grid-template-columns: 1fr 1fr; } }
 
-@media screen and (max-width: 533px) {
-  .productos {
-    grid-template-columns: 1fr; } }
-
-@media screen and (max-width: 533px) {
+@media screen and (max-width: 576px) {
   .productos {
     grid-template-columns: 1fr; } }
