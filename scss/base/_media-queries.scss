@@ -176,3 +176,65 @@
         grid-template-columns: 1fr;
     }
 }
+
+// SERVICIOS
+@media screen and (max-width: 1240px) {
+    .servicios {
+        .servicios__parrafo {
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .servicios {
+        .servicios__parrafo {
+        }
+        .servicios__img2 {
+        }
+    }
+}
+@media screen and (max-width: 485px) {
+    .servicios {
+        .servicios__parrafo {
+            font-size: 10px;
+        }
+        .servicios__formulario {
+            textarea {
+                width: 150px;
+                height: 100px;
+            }
+            input {
+                width: 150px;
+            }
+            button {
+                width: 150px;
+            }
+        }
+    }
+}
+
+// CONTACTOS
+@media screen and (max-width: 320px) {
+    .contactos-informacion {
+        font-size: 12px;
+    }
+    .contactos-redes {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contactos-informacion {
+        font-size: 12px;
+    }
+    .contactos-formulario {
+        textarea {
+            width: 150px;
+            height: 100px;
+        }
+        input {
+            width: 150px;
+        }
+        button {
+            width: 150px;
+        }
+    }
+}

@@ -224,32 +224,27 @@ main h2 {
 
 .servicios {
   display: grid;
-  grid-template-areas: 'img1 parrafo img2' 'form form form';
+  grid-template-areas: 'parrafo parrafo parrafo' 'form form form';
   gap: 15px;
   background-color: #080808;
   border: 2px #7e7e7e solid;
   color: white;
   margin: 0 40px 40px 40px;
   padding: 20px; }
-  .servicios .servicios__img1 {
-    grid-area: img1;
-    width: 600px;
-    height: 500px; }
   .servicios .servicios__parrafo {
     grid-area: parrafo;
-    border: 2px #7e7e7e solid; }
-  .servicios .servicios__img2 {
-    grid-area: img2;
-    width: 700px;
-    height: 500px;
-    border: 2px #7e7e7e solid; }
+    width: auto;
+    height: auto;
+    border: 2px #7e7e7e solid;
+    text-align: center; }
   .servicios .servicios__formulario {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     grid-area: form;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     border: 2px #7e7e7e solid; }
     .servicios .servicios__formulario form {
       display: flex;
@@ -297,7 +292,8 @@ main h2 {
 
 .contactos-informacion {
   background-color: #080808;
-  height: 150px;
+  height: auto;
+  width: auto;
   border: 2px #7e7e7e solid;
   color: white;
   color: white;
@@ -446,3 +442,31 @@ main h2 {
 @media screen and (max-width: 576px) {
   .productos {
     grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 485px) {
+  .servicios .servicios__parrafo {
+    font-size: 10px; }
+  .servicios .servicios__formulario textarea {
+    width: 150px;
+    height: 100px; }
+  .servicios .servicios__formulario input {
+    width: 150px; }
+  .servicios .servicios__formulario button {
+    width: 150px; } }
+
+@media screen and (max-width: 320px) {
+  .contactos-informacion {
+    font-size: 12px; }
+  .contactos-redes {
+    font-size: 14px; } }
+
+@media screen and (max-width: 480px) {
+  .contactos-informacion {
+    font-size: 12px; }
+  .contactos-formulario textarea {
+    width: 150px;
+    height: 100px; }
+  .contactos-formulario input {
+    width: 150px; }
+  .contactos-formulario button {
+    width: 150px; } }
