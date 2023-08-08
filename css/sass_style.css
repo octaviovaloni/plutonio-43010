@@ -11,6 +11,7 @@ html {
   background-color: #1d1b1b; }
 
 body {
+  background-color: #1d1b1b;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   display: flex;
@@ -302,12 +303,13 @@ main h2 {
 
 .contactos-redes {
   background-color: #080808;
-  height: 150px;
   border: 2px #7e7e7e solid;
   color: white;
   color: white;
   text-align: center;
-  margin: 30px; }
+  margin: 30px;
+  height: auto;
+  width: auto; }
 
 .quienes-somos-informacion {
   text-align: center;
@@ -319,17 +321,6 @@ main h2 {
   margin: auto;
   padding: 15px;
   overflow-wrap: break-word; }
-
-.quienes-somos-galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  margin: 50px; }
-  .quienes-somos-galeria img {
-    display: inline-block;
-    width: 400px;
-    height: 400px; }
 
 @media screen and (max-width: 905px) {
   header {
@@ -470,3 +461,11 @@ main h2 {
     width: 150px; }
   .contactos-formulario button {
     width: 150px; } }
+
+@media screen and (max-width: 320px) {
+  .quienes-somos-informacion {
+    font-size: 10px; } }
+
+@media screen and (max-width: 1000px) {
+  .quienes-somos-informacion {
+    font-size: 10px; } }

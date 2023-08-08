@@ -42,10 +42,11 @@
 }
 .contactos-redes {
     background-color: $item_background;
-    height: 150px;
     border: 2px $border_color solid;
     color: white;
     color: white;
     text-align: center;
     margin: 30px;
+    height: auto;
+    width: auto;
 }

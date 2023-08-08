@@ -9,16 +9,3 @@
     padding: 15px;
     overflow-wrap: break-word; 
 }
-
-.quienes-somos-galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    margin: 50px;
-    img {
-        display: inline-block;
-        width: 400px;
-        height: 400px;
-    }
-}
